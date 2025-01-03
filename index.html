@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        /* Style the webpage using CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a Simple Webpage Using HTML -->
+    <div class="container">
+        <h1>Welcome to My Webpage</h1>
+        <p>
+            This is a simple webpage created to demonstrate the basics of HTML, CSS, and JavaScript. 
+            Here, you will find headings, paragraphs, images, and links styled beautifully.
+        </p>
+        <p>
+            Visit <a href="https://www.example.com" target="_blank">this link</a> for more information.
+        </p>
+        <p>
+            Below, you'll find a button that interacts with you through JavaScript. Click it to see the magic!
+        </p>
+
+        <!-- Add Basic JavaScript for Interactivity -->
+        <button onclick="showAlert()">Click Me!</button>
+    </div>
+
+    <script>
+        // JavaScript function for interactivity
+        function showAlert() {
+            alert("Hello! You just clicked the button.");
+        }
+    </script>
+</body>
+</html>
