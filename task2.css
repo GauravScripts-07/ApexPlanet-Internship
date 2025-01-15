@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 7rem;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content:space-evenly;
+  }
+  
+  .contact-form {
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    height: 30%;
+    width: 20%;
+    box-shadow: 0.5rem 0.5rem 0.4rem #204975; 
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input, textarea, button {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #204975;
+    color: white;
+    border: none;
+
+    cursor: pointer;
+  }
+  
+  button:hover {
+    box-shadow: 0.3rem 0.3rem 0.4rem #204975;
+    transition: .5s;
+    background-color: #4c6294;
+  }
+  
+  /* Responsive Layout */
+
+  .responsive-layout{
+    box-shadow: 0.5rem 0.5rem 0.4rem #122a43;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #87bdd8;
+    border-radius: 5px;
+    background:#b7d7e8;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+  
+  .item {
+    padding: 20px;
+    background: #87bdd8;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    height: 5rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem black;
+  }
+  
+  /* To-Do List */
+
+  .to-do-list{
+    box-shadow: 0.5rem 0.5rem 0.4rem black;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  #taskInput {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+  
+  #addTaskBtn {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #addTaskBtn:hover {
+    background-color: #218838;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #e9ecef;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c82333;
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+      gap: 15px;
+      justify-content: center; /* Centers items */
+    }
+    
+  
+    .card {
+      flex: 1 1 calc(45% - 20px); /* Adjust card size for tablets */
+      max-width: calc(45% - 20px);
+    }
+    .contact-form{
+      width: 50%;
+    }
+
+  
+    #toDoContainer {
+      max-width: 90%;
+      padding: 1.5rem; /* Slightly reduce padding */
+    }
+  
+    form {
+      max-width: 90%;
+      padding: 1.5rem; /* Reduce form padding */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%; /* Full-width cards on smaller screens */
+      max-width: 100%;
+    }
+    .contact-form{
+      width: 85%;
+      padding: none;
+      margin: 2%;
+    }
+    body{
+      background-color: #204975;
+      margin: 3rem;
+    }
+  
+    #toDoContainer {
+      max-width: 95%;
+    }
+  
+    form {
+      max-width: 95%;
+      padding: 1rem; /* Further reduce padding */
+    }
+  
+    body {
+      flex-direction: column; /* Stacks items vertically */
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 350px) {
+    h2 {
+      font-size: 1rem; /* Adjust heading size */
+    }
+    .contact-form{
+      width: 85%;
+      padding: none;
+      margin: 2%;
+    }
+    body{
+      background-color: #204975b9;
+      margin: 1rem;
+    }
+    input,
+    button {
+      font-size: 0.875rem; /* Reduce font size for inputs and buttons */
+    }
+    .item{
+      width: 20%;
+    }
+    .responsive-layout h2{
+      text-size-adjust:70%;
+    }
+    #addTaskBtn {
+      padding: 0.5rem 1rem;
+    }
+  
+    #taskList li {
+      padding: 0.5rem;
+    }
+  
+    .card {
+      padding: 1rem;
+    }
+  }
